@@ -1,0 +1,196 @@
+﻿/*播放器开始*/
+.sora-bangumi-player {
+	height: 80vh;
+	position: relative;
+	overflow: hidden;
+	padding: 0 2%;
+}
+.bangumi-watching {
+	width: 100%;
+	color: #6a6a6a;
+	background: transparent;
+	text-align: center;
+	height: 2rem;
+	font-size: 1rem;
+	line-height: 2rem;
+	position: relative;
+}
+.bangumi-watching-number {
+	font-size: 18px;
+	color: #222;
+	padding: 0;
+}
+.bangumi-list {
+	font-size: 1.1rem;
+	width: 100%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+}
+.bangumi-list > div {
+	float: left;
+	white-space: nowrap;
+	cursor: pointer;
+	list-style: none;
+	overflow: hidden;
+}
+.bangumi-list > div:nth-child(1) {
+	width: 22%;
+	text-align: center;
+	margin-right: 15%;
+}
+.bangumi-list > div:nth-child(2) {
+	width: 45%;
+}
+.bangumi-list > div:nth-child(3) {
+	width: 17%;
+	text-align: center;
+}
+.list-ovefiow {
+	width: 100%;
+	overflow: auto;
+	height: auto;
+}
+.danmuku-list {
+	line-height: 24px;
+	width: 100%;
+	height: 24px;
+	color: #6a6a6a;
+	font-size: 12px;
+	overflow: auto;
+}
+.danmuku-list li {
+	width: 33%;
+	float: left;
+	white-space: nowrap;
+	cursor: pointer;
+	list-style: none;
+	overflow: hidden;
+}
+.danmuku-list li:nth-child(1) {
+	width: 22%;
+	float: left;
+	text-align: center;
+	margin-right: 10%;
+}
+.danmuku-list li:nth-child(2) {
+	width: 50%;
+	float: left;
+	text-overflow: ellipsis;
+}
+.danmuku-list li:nth-child(3) {
+	width: 17%;
+	float: left;
+	text-align: center;
+}
+.sora-bangumi-player .listSkip {
+	border: 0px;
+	width: 100%;
+	height: 3vh;
+}
+.sora-bangumi-button-before, .sora-bangumi-button-under {
+	color: #fff;
+	border: 0;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: text-bottom;
+	text-indent: 0;
+	text-decoration: none;
+	width: 38%;
+	line-height: 3vh;
+	float: left;
+	font-size: 1.2rem;
+	text-align: center;
+}
+.sora-bangumi-button-before {
+	background-color: #63B8FF;
+	border-bottom-left-radius: 10px;
+}
+.sora-bangumi-button-before:hover {
+	background-color: #76EE00;
+	border-bottom-left-radius: 10px;
+}
+.sora-bangumi-button-under {
+	background-color: #FF6666;
+	/*border-bottom-right-radius: 10px;*/
+}
+.sora-bangumi-button-under:hover {
+	background-color: #76EE00;
+	/*border-bottom-right-radius: 10px;*/
+}
+.sora-bangumi-select {
+	background: transparent;
+	font-size: 2vh;
+	color: #fff;
+}
+.sora-bangumi-player .listSkip select {
+	border: 0;
+	font-size: 2vh;
+	text-align-last: center;
+	width: 24%;
+	height: 3vh;
+	float: left;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-appearance: none;
+	background-color: #849AAD;
+	border-bottom-right-radius: 10px;
+}
+.iframe-sora-bangumi-player iframe {
+	width: 76%;
+	height: 100%;
+	background: #ffffff;
+	margin: 0;
+	float: left;
+}
+@media (max-width:768px) {
+	.sora-bangumi-player {
+		height: calc(100% + 30px);
+	}
+	.sora-bangumi-player .listSkip {
+		width: 96%;
+		position: absolute;
+	}
+	.iframe-sora-bangumi-player {
+		height: 50vh;
+	}
+	.iframe-sora-bangumi-player iframe{
+		width: 100%;
+	}
+	.bangumi-danmu {
+		width: 100%;
+		height: 31vh;
+		float: right;
+		border: 0px;
+		position: relative;
+		top: 4vh;
+	}
+	.bangumi-watching {
+		border-bottom: 1px solid rgba(0,0,0,.1);
+	}
+	.list-overflow {
+		overflow: auto;
+		width: 100%;
+		height: calc(27vh - 3.6rem);
+	}
+}
+@media (min-width:769px){
+	.iframe-sora-bangumi-player {
+		height: 65vh;
+	}
+	.sora-bangumi-player .listSkip {
+		position: relative;
+		top: -1px;
+	}
+	.bangumi-danmu {
+		width: 24%;
+		height: 100%;
+		float: right;
+		border: 1px solid rgba(0,0,0,.1);
+		overflow: hidden;
+	}
+	.list-overflow {
+		overflow: auto;
+		height: calc(100% - 3.6rem);
+	}
+}
+/*播放器结束*/
